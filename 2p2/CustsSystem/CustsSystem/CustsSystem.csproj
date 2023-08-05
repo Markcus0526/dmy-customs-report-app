@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{10D19586-B0BB-4DE4-90EF-28F67EE0AC7A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CustsSystem</RootNamespace>
+    <AssemblyName>CustsSystem</AssemblyName>
+    <ApplicationIcon>Main.ico</ApplicationIcon>
+    <StartupObject>CustsSystem.CustomsMain</StartupObject>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>3</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Bin\</OutputPath>
+    <DefineConstants>CODE_ANALYSIS;DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>3</WarningLevel>
+    <NoWarn>
+    </NoWarn>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <CodeAnalysisRuleSet>Migrated rules for CustsSystem.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleAssemblies>
+    </CodeAnalysisRuleAssemblies>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>Migrated rules for CustsSystem (2).ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>CODE_ANALYSIS;DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleAssemblies>
+    </CodeAnalysisRuleAssemblies>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>Migrated rules for CustsSystem (2).ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>..\Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleAssemblies>
+    </CodeAnalysisRuleAssemblies>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>Migrated rules for CustsSystem (2).ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.C1Excel.4, Version=4.1.20113.214, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="C1.C1Report.4, Version=4.6.20113.54459, Culture=neutral, PublicKeyToken=594a0605db190bb9, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Command.4, Version=4.0.20113.19499, Culture=neutral, PublicKeyToken=e808566f358766d8, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Input.4, Version=4.0.20113.33270, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1InputPanel.4, Version=4.0.20113.133, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Report.4, Version=4.6.20113.54459, Culture=neutral, PublicKeyToken=41780e2fc605e636, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1SplitContainer.4, Version=4.0.20113.11, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1TrueDBGrid.4, Version=4.0.20113.61237, Culture=neutral, PublicKeyToken=75ae3fb0e2b1e0da, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="MySql.Data, Version=5.2.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\MySql.Data\5.2.5.0__c5687fc88969c44d\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBProvider.cs" />
+    <Compile Include="DSBaseSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSBaseSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSCustsSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSCustsSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSEnvSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSEnvSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGoodsStdEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGoodsStdEdit.Designer.cs">
+      <DependentUpon>FrmGoodsStdEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPassword.Designer.cs">
+      <DependentUpon>FrmPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBaseDataEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBaseDataEdit.Designer.cs">
+      <DependentUpon>FrmBaseDataEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBaseGoodsEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBaseGoodsEdit.Designer.cs">
+      <DependentUpon>FrmBaseGoodsEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDropdown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDropdown.Designer.cs">
+      <DependentUpon>FrmDropdown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCustsGoodsEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCustsGoodsEdit.Designer.cs">
+      <DependentUpon>FrmCustsGoodsEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInDocEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInDocEdit.Designer.cs">
+      <DependentUpon>FrmInDocEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEnvSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEnvSet.Designer.cs">
+      <DependentUpon>FrmEnvSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOutDocPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOutDocPrint.Designer.cs">
+      <DependentUpon>FrmOutDocPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogon.Designer.cs">
+      <DependentUpon>FrmLogon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMDIMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMDIMain.Designer.cs">
+      <DependentUpon>FrmMDIMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMessage.Designer.cs">
+      <DependentUpon>FrmMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOutDocEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOutDocEdit.Designer.cs">
+      <DependentUpon>FrmOutDocEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSplash.Designer.cs">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomsMain.cs" />
+    <Compile Include="FrmStandardDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStandardDlg.Designer.cs">
+      <DependentUpon>FrmStandardDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserGoodsEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserGoodsEdit.Designer.cs">
+      <DependentUpon>FrmUserGoodsEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComMisc.cs" />
+    <Compile Include="FrmUserMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserMan.Designer.cs">
+      <DependentUpon>FrmUserMan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmBaseDataEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmBaseDataEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBaseGoodsEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmBaseGoodsEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInDocEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmInDocEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEnvSet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmEnvSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMDIMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmMDIMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSplash.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmGoodsStdEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmGoodsStdEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPassword.resx">
+      <DependentUpon>FrmPassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogon.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmLogon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMessage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOutDocEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmOutDocEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStandardDlg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmStandardDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserGoodsEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmUserGoodsEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDropdown.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmDropdown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCustsGoodsEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmCustsGoodsEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOutDocPrint.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmOutDocPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserMan.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmUserMan.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="Main.ico" />
+    <None Include="Resources\btnMoveDown.png" />
+    <None Include="Resources\btnMoveUp.png" />
+    <None Include="Resources\btnSearch.png" />
+    <None Include="Resources\bkMessage.png" />
+    <None Include="Resources\icoUserMan.ico" />
+    <None Include="Resources\btnCDT.png" />
+    <None Include="DSBaseSet.xsc">
+      <DependentUpon>DSBaseSet.xsd</DependentUpon>
+    </None>
+    <None Include="DSBaseSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSBaseSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSBaseSet.xss">
+      <DependentUpon>DSBaseSet.xsd</DependentUpon>
+    </None>
+    <None Include="DSCustsSet.xsc">
+      <DependentUpon>DSCustsSet.xsd</DependentUpon>
+    </None>
+    <None Include="DSCustsSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSCustsSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSCustsSet.xss">
+      <DependentUpon>DSCustsSet.xsd</DependentUpon>
+    </None>
+    <None Include="DSEnvSet.xsc">
+      <DependentUpon>DSEnvSet.xsd</DependentUpon>
+    </None>
+    <None Include="DSEnvSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSEnvSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSEnvSet.xss">
+      <DependentUpon>DSEnvSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\btnPwd.png" />
+    <None Include="Resources\btnOff.png" />
+    <None Include="Resources\btnOn.png" />
+    <None Include="Resources\btnClose.png" />
+    <None Include="Resources\btnCopy.png" />
+    <None Include="Resources\btnDel.png" />
+    <None Include="Resources\btnFirst.png" />
+    <None Include="Resources\btnGoods.png" />
+    <None Include="Resources\btnLast.png" />
+    <None Include="Resources\btnNext.png" />
+    <None Include="Resources\btnPaste.png" />
+    <None Include="Resources\btnPrev.png" />
+    <None Include="Resources\btnPrint.png" />
+    <None Include="Resources\btnRefresh.png" />
+    <None Include="Resources\btnSave.png" />
+    <None Include="Resources\btnAdd.png" />
+    <None Include="Resources\btnApply.png" />
+    <None Include="Resources\btnCancel.png" />
+    <None Include="Resources\bkSplash.bmp" />
+    <None Include="Resources\btnLoginUp.bmp">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\btnLoginOver.bmp" />
+    <None Include="Resources\btnLoginDown.bmp" />
+    <None Include="Resources\btnCancelUp.bmp" />
+    <None Include="Resources\btnCancelOver.bmp" />
+    <None Include="Resources\btnCancelDown.bmp" />
+    <None Include="Resources\bkLogon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
