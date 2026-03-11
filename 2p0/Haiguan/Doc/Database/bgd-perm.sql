@@ -1,4 +1,0 @@
-GRANT ALL PRIVILEGES
-ON bgddb.*
-TO admin@'%'
-IDENTIFIED BY '123456';
