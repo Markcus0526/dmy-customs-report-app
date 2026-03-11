@@ -1,1 +1,0 @@
-load data infile 'c:/ret.csv' into table shangpin fields terminated by ',' lines terminated by '\r\n'
